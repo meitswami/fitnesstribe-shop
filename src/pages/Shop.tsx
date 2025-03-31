@@ -6,7 +6,7 @@ import ProductCard from '@/components/shop/ProductCard';
 import ProductFilter from '@/components/shop/ProductFilter';
 import { Button } from '@/components/ui/button';
 import { products } from '@/data/products';
-import { Product } from '@/types';
+import { Product, Activity } from '@/types';
 import { Filter } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -43,7 +43,9 @@ const Shop: React.FC = () => {
     // Filter by activity
     if (filters.activity && filters.activity.length > 0) {
       result = result.filter(product => 
-        filters.activity.some((activity: string) => product.activity.includes(activity))
+        filters.activity.some((activity: string) => 
+          product.activity.includes(activity as Activity)
+        )
       );
     }
 
