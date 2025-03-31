@@ -8,25 +8,25 @@ const CategorySection: React.FC = () => {
     {
       id: 'gym_equipment',
       title: 'Gym Equipment',
-      image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&auto=format&fit=crop',
       description: 'Professional-grade equipment for your home gym'
     },
     {
       id: 'sportswear',
       title: 'Sportswear',
-      image: 'https://images.unsplash.com/photo-1536922246289-88c42f957773?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&auto=format&fit=crop',
       description: 'Performance apparel for every workout'
     },
     {
       id: 'yoga_meditation',
       title: 'Yoga & Meditation',
-      image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1599447292461-74278d6656a5?w=800&auto=format&fit=crop',
       description: 'Everything you need for your inner peace journey'
     },
     {
       id: 'recovery_wellness',
       title: 'Recovery & Wellness',
-      image: 'https://images.unsplash.com/photo-1519311965067-36d3e5f33d39?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?w=800&auto=format&fit=crop',
       description: 'Tools and supplements to help you recover faster'
     }
   ];
