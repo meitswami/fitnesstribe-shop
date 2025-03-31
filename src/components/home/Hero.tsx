@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   const slides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&auto=format&fit=crop",
       title: "Premium Fitness Equipment",
       description: "Gear up for success with our professional-grade equipment",
       buttonText: "Shop Equipment",
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1600&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=1600&auto=format&fit=crop",
       title: "Yoga & Meditation Essentials",
       description: "Find your inner peace with our yoga and meditation collection",
       buttonText: "Shop Yoga",
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1600&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?w=1600&auto=format&fit=crop",
       title: "Athletic Footwear & Apparel",
       description: "Elevate your performance with our premium sportswear range",
       buttonText: "Shop Sportswear",

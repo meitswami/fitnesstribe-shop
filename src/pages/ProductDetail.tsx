@@ -31,7 +31,7 @@ const ProductDetail: React.FC = () => {
 
   const handlePrevImage = () => {
     setCurrentImageIndex((prev) => 
-      prev === 0 ? product.images.length - 1 : prev - 1
+      prev ===.0 ? product.images.length - 1 : prev - 1
     );
   };
 
@@ -80,11 +80,11 @@ const ProductDetail: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Product Images */}
           <div className="relative">
-            <div className="relative bg-gray-100 rounded-lg overflow-hidden aspect-square">
+            <div className="relative bg-gray-50 rounded-lg overflow-hidden aspect-square shadow-md">
               <img 
                 src={product.images[currentImageIndex]} 
                 alt={product.name} 
-                className="w-full h-full object-contain p-4"
+                className="w-full h-full object-contain p-4 transition-all duration-500 ease-in-out hover:scale-105"
               />
               
               {product.discountPercentage && product.discountPercentage > 0 && (
@@ -114,12 +114,12 @@ const ProductDetail: React.FC = () => {
             
             {/* Thumbnail Images */}
             {product.images.length > 1 && (
-              <div className="flex space-x-2 mt-4">
+              <div className="flex space-x-2 mt-4 justify-center">
                 {product.images.map((image, index) => (
                   <button
                     key={index}
-                    className={`w-16 h-16 rounded-md overflow-hidden border-2 ${
-                      index === currentImageIndex ? 'border-primary' : 'border-transparent'
+                    className={`w-16 h-16 rounded-md overflow-hidden border-2 transition-all duration-300 ${
+                      index === currentImageIndex ? 'border-primary scale-110' : 'border-transparent opacity-70 hover:opacity-100'
                     }`}
                     onClick={() => setCurrentImageIndex(index)}
                   >
